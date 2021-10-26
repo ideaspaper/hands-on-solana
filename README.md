@@ -4,7 +4,7 @@
 
 - [Running Local Cluster for Testing](#running-local-cluster-for-testing)
 - [Wallet](#wallet)
-- [Client Side](#client-side)
+- [Client](#client)
 - [Program](#program)
 
 ## Running Local Cluster for Testing
@@ -41,7 +41,7 @@ A wallet is a keypair consisting of a public key and a private key. A wallet is 
 
 [**Back to top**](#contents)
 
-## Client Side
+## Client
 
 Solana provides a [npm package](https://www.npmjs.com/package/@solana/web3.js) that we can use to make a client side program. More detail information on how the client works can be found [here](./client).
 
