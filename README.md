@@ -2,11 +2,11 @@
 
 ## Contents
 
-- [Running Local Cluster for Testing](##running-local-cluster-for-testing)
-- [Wallet](##wallet)
-- [Client Side](##client-side)
-- [Program](##program)
-- [Hello World](##hello-world)
+- [Running Local Cluster for Testing](#running-local-cluster-for-testing)
+- [Wallet](#wallet)
+- [Client Side](#client-side)
+- [Program](#program)
+- [Hello World](#hello-world)
 
 ## Running Local Cluster for Testing
 
