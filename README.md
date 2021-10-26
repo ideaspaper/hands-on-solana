@@ -30,7 +30,7 @@
 
 [Source](https://docs.solana.com/developing/on-chain-programs/debugging)
 
-[**Back to top**](#hands-on-solana)
+[**Back to top**](#contents)
 
 ## Wallet
 
@@ -40,13 +40,13 @@ $ solana-keygen new <path>
 
 This wallet is a keypair consisting of a public key and a private key. This is only a wallet, not an acount. You can use the same wallet on all Solana clusters (local, dev, test, main) as an account, but the account will be different in each cluster. An account will not exists in a cluster until it has some lamports.
 
-[**Back to top**](#hands-on-solana)
+[**Back to top**](#contents)
 
 ## Client Side
 
 Solana provides a [npm package](https://www.npmjs.com/package/@solana/web3.js) that we can use to make a client side program.
 
-[**Back to top**](#hands-on-solana)
+[**Back to top**](#contents)
 
 ## Program
 
@@ -102,7 +102,7 @@ pub fn process_instruction(
 }
 ```
 
-[**Back to top**](#hands-on-solana)
+[**Back to top**](#contents)
 
 ## Hello World
 
@@ -111,4 +111,4 @@ Note about hello world example:
 1. A program needs to be built then deployed first. We use `cargo build-bpf` for this.
 2. Each account will create a greeting account, and make the program as the owner.
 
-[**Back to top**](#hands-on-solana)
+[**Back to top**](#contents)
