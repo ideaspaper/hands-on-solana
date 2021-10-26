@@ -3,7 +3,7 @@ import { Controller } from "./controllers/controller";
 const command = process.argv[2];
 const options = process.argv.slice(3);
 
-if (command === 'info') {
+if (command === "info") {
   Controller.info(options[0]);
 } else if (command === "airdrop") {
   Controller.airdrop(options[0], options[1]);

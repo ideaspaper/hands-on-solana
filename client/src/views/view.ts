@@ -17,12 +17,15 @@ export class View {
     console.log(`Transaction on ${userPubkey} has been completed`);
   }
 
-  static transactionResult(managedAccountPubkey: PublicKey, managedAccount: ManagedAccount) {
+  static transactionResult(
+    managedAccountPubkey: PublicKey,
+    managedAccount: ManagedAccount
+  ) {
     console.log(
       managedAccountPubkey.toBase58(),
-      'has been greeted',
+      "has been greeted",
       managedAccount.getCounter(),
-      'time(s)',
+      "time(s)"
     );
   }
 }

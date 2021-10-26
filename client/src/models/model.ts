@@ -1,7 +1,7 @@
 import * as fs from "fs/promises";
 import * as os from "os";
 import * as path from "path";
-import * as yaml from 'yaml';
+import * as yaml from "yaml";
 import {
   AccountInfo,
   Connection,
@@ -68,8 +68,10 @@ export class Model {
 
   async trasactionResult(): Promise<ManagedAccount> {
     await this.generateManagedAccountPubkey();
-    const managedAccountInfo = await this.connection.getAccountInfo(this.managedAccountPubkey);
-    if (!managedAccountInfo) throw new Error('cannot find the managed account');
+    const managedAccountInfo = await this.connection.getAccountInfo(
+      this.managedAccountPubkey
+    );
+    if (!managedAccountInfo) throw new Error("cannot find the managed account");
     return ManagedAccount.deserialize(managedAccountInfo.data);
   }
 
