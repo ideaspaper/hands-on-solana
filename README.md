@@ -6,7 +6,6 @@
 - [Wallet](#wallet)
 - [Client Side](#client-side)
 - [Program](#program)
-- [Hello World](#hello-world)
 
 ## Running Local Cluster for Testing
 
@@ -44,7 +43,7 @@ A wallet is a keypair consisting of a public key and a private key. A wallet is 
 
 ## Client Side
 
-Solana provides a [npm package](https://www.npmjs.com/package/@solana/web3.js) that we can use to make a client side program.
+Solana provides a [npm package](https://www.npmjs.com/package/@solana/web3.js) that we can use to make a client side program. More detail information on how the client works can be found [here](./client).
 
 [**Back to top**](#contents)
 
@@ -101,14 +100,5 @@ pub fn process_instruction(
     Ok(())
 }
 ```
-
-[**Back to top**](#contents)
-
-## Hello World
-
-Note about hello world example:
-
-1. A program needs to be built then deployed first. We use `cargo build-bpf` for this.
-2. Each account will create a greeting account, and make the program as the owner.
 
 [**Back to top**](#contents)
