@@ -38,7 +38,7 @@
 $ solana-keygen new <path>
 ```
 
-This wallet is a keypair consisting of a public key and a private key. This is only a wallet, not an acount. You can use the same wallet on all Solana clusters (local, dev, test, main) as an account, but the account will be different in each cluster. An account will not exists in a cluster until it has some lamports.
+A wallet is a keypair consisting of a public key and a private key. A wallet is not an acount. You can use the same wallet on all Solana clusters (local, dev, test, main) as an account, but the account will be different in each cluster. An account will not exists in a cluster until it has some lamports.
 
 [**Back to top**](#contents)
 
