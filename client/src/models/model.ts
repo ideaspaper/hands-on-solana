@@ -106,11 +106,6 @@ export class Model {
       this.managedAccountPubkey
     );
     if (!managedAccount) {
-      console.log(
-        "Creating account",
-        this.managedAccountPubkey.toBase58(),
-        "to say hello to"
-      );
       const lamports = await this.connection.getMinimumBalanceForRentExemption(
         ManagedAccount.getSize()
       );
