@@ -74,31 +74,11 @@ name = "executablename"
 crate-type = ["cdylib", "lib"]
 ```
 
-The hello world example code is something like below.
+Other than `Cargo.toml` we have to include `Xargo.toml` as well. The content should be as below.
 
-```rust
-use borsh::{BorshDeserialize, BorshSerialize};
-use solana_program::{
-    account_info::{next_account_info, AccountInfo},
-    entrypoint,
-    entrypoint::ProgramResult,
-    msg,
-    program_error::ProgramError,
-    pubkey::Pubkey,
-};
-
-// Declare and export the program's entrypoint
-entrypoint!(process_instruction);
-
-// Program entrypoint's implementation
-pub fn process_instruction(
-    program_id: &Pubkey,      // Public key of the account the hello world program was loaded into
-    accounts: &[AccountInfo], // The account to say hello to
-    instruction_data: &[u8],  // Instruction data
-) -> ProgramResult {
-    // snipped
-    Ok(())
-}
+```toml
+[target.bpfel-unknown-unknown.dependencies.std]
+features = []
 ```
 
 [**Back to top**](#contents)
