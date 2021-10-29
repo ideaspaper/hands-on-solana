@@ -81,4 +81,6 @@ Other than `Cargo.toml` we have to include `Xargo.toml` as well. The content sho
 features = []
 ```
 
+[Source](https://docs.solana.com/developing/on-chain-programs/developing-rust)
+
 [**Back to top**](#contents)
